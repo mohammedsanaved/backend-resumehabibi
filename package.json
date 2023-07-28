@@ -1,0 +1,23 @@
+{
+  "name": "backend-resumehabibi",
+  "version": "1.0.0",
+  "description": "Backend Repo for resumehabibi",
+  "main": "server.js",
+  "type": "module",
+  "engines": {
+    "node": ">= 14.20.1"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
