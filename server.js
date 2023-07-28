@@ -3,4 +3,11 @@ import express from "express";
 const app = express();
 const port = "http://localhost:8000/";
 
-app.listen(port, console.log("Server is running on port"));
+import { connectDB } from "./data/database.js";
+
+connectDB();
+app.listen(process.env.PORT, () => {
+  console.log(
+    `server listening on port:${process.env.PORT} on Mode ${process.env.NODE_ENV}`
+  );
+});
